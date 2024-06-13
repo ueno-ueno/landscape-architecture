@@ -260,6 +260,12 @@ a:hover {
   .conceptImg01 {
     position: static;
     width: 100%;
+    margin-bottom: 24px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .conceptImg01 {
+    margin-bottom: 24px;
   }
 }
 
@@ -284,6 +290,11 @@ a:hover {
     display: block;
   }
 }
+@media screen and (max-width: 600px) {
+  .conceptImg02 {
+    margin-bottom: 24px;
+  }
+}
 
 .conceptText {
   max-width: 50%;
@@ -294,27 +305,30 @@ a:hover {
 @media screen and (max-width: 840px) {
   .conceptText {
     max-width: 100%;
+    padding: 24px;
   }
 }
 .conceptText .conceptTitle .en {
   border-top: 1px solid #FAF8F6;
   margin-bottom: 40px;
 }
-.conceptText .circurImg {
-  position: absolute;
-  top: 6%;
-  right: 5%;
-  border-radius: 50%;
-}
 .conceptText p {
   margin-bottom: 48px;
   line-height: 2;
   text-align: justify;
 }
-.conceptText .btnArea {
+
+.circurImg {
+  position: absolute;
+  top: 6%;
+  right: 5%;
+  border-radius: 50%;
+}
+
+.btnArea {
   text-align: right;
 }
-.conceptText .btnArea .readMore {
+.btnArea .readMore {
   display: inline-block;
   padding: 16px 48px;
   background-color: #fff;
@@ -325,7 +339,7 @@ a:hover {
   transition: 0.3s ease;
   cursor: pointer;
 }
-.conceptText .btnArea .readMore:hover {
+.btnArea .readMore:hover {
   background-color: #4D4135;
   color: #fff;
   outline: 1px solid #fff;
@@ -339,6 +353,11 @@ a:hover {
   padding-top: 80px;
   margin-bottom: 240px;
   position: relative;
+}
+@media screen and (max-width: 600px) {
+  .serviceBg {
+    margin-bottom: 80px;
+  }
 }
 .serviceBg .serviceTitle {
   color: #FAF8F6;
@@ -371,6 +390,11 @@ a:hover {
   height: 550px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media screen and (max-width: 600px) {
+  .swiper-slide img {
+    height: 420px;
+  }
 }
 
 .serviceMainText {

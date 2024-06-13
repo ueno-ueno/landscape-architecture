@@ -291,8 +291,13 @@ a:hover {
 
   @include mediaQuery(tab) {
     position: static;
+    
     width: 100%;
+    margin-bottom: 48px;
   }
+  @include mediaQuery(sp){
+    margin-bottom: 24px;
+  } 
 }
 
 .conceptImg02 {
@@ -313,8 +318,10 @@ a:hover {
     text-align: right;
     display: block;
   }
+  @include mediaQuery(sp){
+    margin-bottom: 24px;
+  } 
 }
-
 
 .conceptText {
   max-width: 50%;
@@ -324,6 +331,7 @@ a:hover {
 
   @include mediaQuery(tab) {
     max-width: 100%;
+    padding: 24px;
   }
 
   .conceptTitle {
@@ -333,17 +341,18 @@ a:hover {
     }
   }
 
+  p {
+    margin-bottom: 48px;
+    line-height: 2;
+    text-align: justify;
+  }
+}
+
   .circurImg {
     position: absolute;
     top: 6%;
     right: 5%;
     border-radius: 50%;
-  }
-
-  p {
-    margin-bottom: 48px;
-    line-height: 2;
-    text-align: justify;
   }
 
   // readMoreボタン
@@ -370,7 +379,7 @@ a:hover {
       }
     }
   }
-}
+
 
 // service
 .serviceBg {
@@ -379,6 +388,9 @@ a:hover {
   padding-top: 80px;
   margin-bottom: 240px;
   position: relative;
+  @include mediaQuery(sp) {
+   margin-bottom: 80px;
+  }
 
   .serviceTitle {
     color: $backGroundColor;
@@ -412,6 +424,9 @@ a:hover {
     max-width: 800px;
     height: 550px;
     object-fit: cover;
+    @include mediaQuery(sp) {
+      height: 420px;
+    }
   }
 }
 
