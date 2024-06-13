@@ -260,7 +260,7 @@ a:hover {
   .conceptImg01 {
     position: static;
     width: 100%;
-    margin-bottom: 24px;
+    margin-bottom: 48px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -323,6 +323,12 @@ a:hover {
   top: 6%;
   right: 5%;
   border-radius: 50%;
+}
+@media screen and (max-width: 600px) {
+  .circurImg {
+    width: 110px;
+    height: 110px;
+  }
 }
 
 .btnArea {
@@ -500,6 +506,9 @@ a:hover {
 }
 .adviceArea .right img {
   opacity: 0.5;
+}
+.adviceArea .serviceBtn {
+  margin-bottom: 32px;
 }
 
 .newsTitle {
