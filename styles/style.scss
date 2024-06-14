@@ -463,7 +463,7 @@ a:hover {
   position: absolute;
   top: 40%;
   left: 0;
-    width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -557,6 +557,20 @@ a:hover {
     }
   }
 }
+
+.video-area {
+  text-align: center;
+  margin: 56px 0 80px;
+
+  .bg-video {
+    max-width: 500px;
+
+    @include mediaQuery(sp) {
+      max-width: 300px;
+    }
+  }
+}
+
 
 // serviceAdvice
 .adviceArea {
@@ -712,6 +726,7 @@ a:hover {
   right: 4%;
   display: none;
   z-index: 50;
+
   img {
     width: 30px;
     height: 30px;

@@ -462,6 +462,19 @@ a:hover {
   margin-bottom: 2%;
 }
 
+.video-area {
+  text-align: center;
+  margin: 56px 0 80px;
+}
+.video-area .bg-video {
+  max-width: 500px;
+}
+@media screen and (max-width: 600px) {
+  .video-area .bg-video {
+    max-width: 300px;
+  }
+}
+
 .adviceArea {
   display: flex;
   justify-content: space-between;
