@@ -1,6 +1,8 @@
 @charset "UTF-8";
 html {
   font-size: 100%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem;
 }
 
 body {
@@ -8,6 +10,7 @@ body {
   line-height: 1.5;
   background-color: #FAF8F6;
   font-family: "Helvetica Neue", "Segoe UI", 游ゴシック体, YuGothic, 游ゴシック, "Yu Gothic", "ヒラギノ角ゴ ProN W3", Meiryo, "メイリオ", sans-serif;
+  color: #2D2929;
 }
 
 img {
@@ -435,6 +438,9 @@ a:hover {
   border-radius: 8px;
   overflow: hidden;
 }
+.serviceContent li h3 {
+  font-weight: bold;
+}
 @media screen and (max-width: 600px) {
   .serviceContent li {
     width: 100%;
@@ -583,6 +589,22 @@ a:hover {
 .contact .contactUs-Btn:hover::before {
   transform-origin: 0% 50%;
   transform: scaleX(1);
+}
+
+.toTop {
+  position: fixed;
+  top: 30%;
+  right: 4%;
+  display: none;
+  z-index: 50;
+}
+.toTop img {
+  width: 30px;
+  height: 30px;
+}
+
+.toTop.active {
+  display: block;
 }
 
 .footer {

@@ -1,6 +1,18 @@
 'use strict'
 
+// toTop
+const toTop = document.querySelector('.toTop')
+console.log(toTop)
 
+window.addEventListener('scroll', function(){
+  let scrolly = window.scrollY;
+  if(scrolly > 900){
+    toTop.classList.add('active')
+  }else{
+    toTop.classList.remove('active')
+  }
+  console.log(window.scrollY);
+})
 
 // fade
 gsap.registerPlugin(ScrollTrigger);
@@ -29,6 +41,8 @@ scrollTrigger: {
 });
 });
 
+
+// mainCaption
 const paragraph = document.querySelector('.mainCaption')
 console.log( paragraph)
 
@@ -60,8 +74,9 @@ gsap.fromTo(
     },
   },
 );
-// });
 
+
+// swiper
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
