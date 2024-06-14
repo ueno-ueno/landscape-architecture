@@ -58,6 +58,7 @@ a:hover {
 
   @include mediaQuery(sp) {
     margin-bottom: 8px;
+    margin-right: 0;
   }
 }
 
@@ -144,6 +145,7 @@ a:hover {
 
   @include mediaQuery(sp) {
     justify-content: center;
+    align-items: center;
   }
 }
 

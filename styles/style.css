@@ -40,6 +40,7 @@ a:hover {
 @media screen and (max-width: 600px) {
   .logo {
     margin-bottom: 8px;
+    margin-right: 0;
   }
 }
 
@@ -119,6 +120,7 @@ a:hover {
 @media screen and (max-width: 600px) {
   .headerInner {
     justify-content: center;
+    align-items: center;
   }
 }
 
