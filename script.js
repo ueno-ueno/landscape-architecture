@@ -56,7 +56,7 @@ gsap.fromTo(
     scrollTrigger: {
       trigger: '.mainCaption',
       start: 'top 70%',
-      markers: true
+      // markers: true
     },
   },
 );
