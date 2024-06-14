@@ -1,28 +1,6 @@
 'use strict'
-const header = document.querySelector('.headerInner')
-const head = document.querySelector('.header')
-const hamburger = document.querySelector('.hamburger')
-const hamburgerArea = document.querySelector('.hamburgerArea')
-
-hamburger.addEventListener('click', function(){
-  head.classList.toggle('active');
-})
 
 
-// window.addEventListener('scroll', function(){
-//   let scrollY = window.scrollY;
-//   if(scrollY < 800){
-// header.style.opacity = '1'
-// header.style.visibility = 'visible'
-// hamburgerArea.style.display = 'none'
-
-//   }else{
-//     header.style.opacity = '0'
-//     header.style.visibility = 'hidden'
-//     hamburgerArea.style.display = 'block'
-//   }
-//   console.log(this.window.scrollY)
-// });
 
 // fade
 gsap.registerPlugin(ScrollTrigger);
@@ -51,7 +29,38 @@ scrollTrigger: {
 });
 });
 
+const paragraph = document.querySelector('.mainCaption')
+console.log( paragraph)
 
+const textContent = paragraph.textContent;
+console.log(textContent)
+const newTextContent = [...textContent]
+  .map((char) => `<span>${char}</span>`)
+  .join("");
+  paragraph.innerHTML = newTextContent;
+
+gsap.fromTo(
+  ".mainCaption span", // アニメーションさせる要素
+  {
+    autoAlpha: 0, // アニメーション開始前は透明
+    y: 30, // 20px下に移動
+  },
+  
+  {
+    autoAlpha: 1, // アニメーション後は出現(透過率0)
+    y: 0, // 20px上に移動
+    stagger: 0.4, // 0.2秒遅れて順番に再生
+    repeatDelay: 2,
+    duration: 1,
+
+    scrollTrigger: {
+      trigger: '.mainCaption',
+      start: 'top 70%',
+      markers: true
+    },
+  },
+);
+// });
 
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',

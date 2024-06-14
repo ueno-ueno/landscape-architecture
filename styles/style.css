@@ -47,7 +47,7 @@ a:hover {
 .ttl .en {
   display: inline-block;
   border-top: 1px solid #4D4135;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 600;
 }
 
@@ -61,6 +61,25 @@ a:hover {
   margin-left: auto;
   transition: 0.3s ease;
   cursor: pointer;
+  position: relative;
+  transition: ease 0.2s;
+}
+.readMore::after {
+  content: "";
+  position: absolute;
+  top: 42%;
+  right: 16px;
+  width: 7px;
+  height: 7px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(45deg);
+  transition: all 0.3s;
+}
+.readMore:hover::after {
+  right: 11px;
+  border-top: 2px solid #4D4135;
+  border-right: 2px solid #4D4135;
 }
 .readMore:hover {
   background-color: #FAF8F6;
@@ -157,58 +176,6 @@ a:hover {
   transform: scaleX(1);
 }
 
-.hamburgerArea {
-  display: inline-block;
-  position: fixed;
-  top: 5%;
-  right: 5%;
-  z-index: 30;
-  transition: 0.5s ease;
-  display: none;
-  cursor: pointer;
-}
-.hamburgerArea .hamburger {
-  width: 48px;
-  height: 48px;
-  border: 2px solid #2D2929;
-  border-radius: 50%;
-  position: relative;
-  background-color: #FAF8F6;
-}
-.hamburgerArea .hamburger span {
-  display: block;
-  width: 22px;
-  height: 3px;
-  background-color: #2D2929;
-  position: absolute;
-  top: 13px;
-  left: 12px;
-  transition: 0.3s;
-}
-.hamburgerArea .hamburger span:nth-child(2) {
-  top: 21px;
-}
-.hamburgerArea .hamburger span:nth-child(3) {
-  top: 29px;
-}
-
-.active .hamburger span:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-.active .hamburger span:nth-child(2) {
-  opacity: 0;
-}
-.active .hamburger span:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}
-
-.active .headerInner {
-  opacity: 1;
-  visibility: visible;
-  width: 30%;
-  height: 100vh;
-}
-
 .mainVisual {
   text-align: center;
 }
@@ -227,7 +194,11 @@ a:hover {
 .mainVisual p {
   font-size: 2.875rem;
   margin-bottom: 152px;
+  font-family: "Shippori Mincho";
   letter-spacing: 0.7rem;
+}
+.mainVisual p span {
+  display: inline-block;
 }
 @media screen and (max-width: 840px) {
   .mainVisual p {
@@ -334,7 +305,8 @@ a:hover {
 .btnArea {
   text-align: right;
 }
-.btnArea .readMore {
+
+.conceptText .readMore {
   display: inline-block;
   padding: 16px 48px;
   background-color: #fff;
@@ -344,13 +316,31 @@ a:hover {
   margin-left: auto;
   transition: 0.3s ease;
   cursor: pointer;
+  position: relative;
 }
-.btnArea .readMore:hover {
+.conceptText .readMore::after {
+  content: "";
+  position: absolute;
+  top: 42%;
+  right: 16px;
+  width: 7px;
+  height: 7px;
+  border-top: 2px solid #4D4135;
+  border-right: 2px solid #4D4135;
+  transform: rotate(45deg);
+  transition: all 0.3s;
+}
+.conceptText .readMore:hover {
   background-color: #4D4135;
-  color: #fff;
-  outline: 1px solid #fff;
+  color: #FAF8F6;
+  outline: 1px solid #FAF8F6;
   box-shadow: 0 3px 7px #2D2929;
   opacity: 1;
+}
+.conceptText .readMore:hover::after {
+  right: 11px;
+  border-top: 2px solid #FAF8F6;
+  border-right: 2px solid #FAF8F6;
 }
 
 .serviceBg {
@@ -554,7 +544,7 @@ a:hover {
 }
 @media screen and (max-width: 600px) {
   .contact .contactUs {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
 .contact p {
@@ -568,7 +558,7 @@ a:hover {
   outline: 1px solid #FAF8F6;
   color: #FAF8F6;
   border-radius: 5px;
-  box-shadow: 0 2px 7px #2D2929;
+  box-shadow: 0px 5px 7px #2D2929;
   position: relative;
   z-index: 1;
   transition: 0.3s;

@@ -10,12 +10,15 @@
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
   <script src="script.js" defer></script>
 </head>
 
 <body>
 
-  <header class="header">
+  <header id="header" class="header">
     <div class="headerInner">
 
       <div class="headerLeft">
@@ -27,10 +30,10 @@
 
         <nav>
           <ul class="navArea">
-            <li><a href="">Concept</a></li>
-            <li><a href="">Service</a></li>
-            <li><a href="">News</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#concept">Concept</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -54,10 +57,10 @@
   <main>
     <div class="mainVisual">
       <img class="mainVisualImg" src="img/mainVisual.png" alt="">
-      <p class="fade">ライフスタイルをより豊かに。</p>
+      <p class="mainCaption">ライフスタイルをより豊かに。</p>
     </div>
 
-    <section class="concept wrapper">
+    <section id="concept" class="concept wrapper">
       <div class="conceptWrapper">
         <div class="conceptImg">
           <a class="conceptImg01 fade" href=""><img src="img/conceptImg01.png" alt=""></a>
@@ -86,7 +89,7 @@
     </section>
 
 
-    <section class="service">
+    <section id="service" class="service">
 
       <div class="serviceBg">
         <div class="wrapper">
@@ -194,7 +197,7 @@
     </section>
 
 
-    <section class="news wrapper">
+    <section id="news" class="news wrapper">
       <h2 class="newsTitle fade">
         <span class="newsTitle-en">News</span>
         <span class="newsTitle-ja">ニュース</span>
@@ -225,12 +228,14 @@
       </ul>
     </section>
 
-    <section class="contact fade">
+    <section id="contact" class="contact fade">
+      <div class="wrapper">
       <h2 class="contactUs">Contact Us</h2>
       <p>テキストテキストテキストテキストテキストテキスト</p>
 
-      <button class="contactUs-Btn">Contact</button>
-
+      <button class="contactUs-Btn">
+        <a href="mailto:xxxxx@xxx.xxx?subject=お問い合わせ">Contact</a></button>
+    </div>
     </section>
   </main>
 

@@ -67,12 +67,12 @@ a:hover {
   .en {
     display: inline-block;
     border-top: 1px solid $mainColor;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 600;
   }
 }
 
-// readMoreボタン
+// sectionエリアreadMoreボタン
 .readMore {
   display: inline-block;
   padding: 16px 48px;
@@ -83,6 +83,25 @@ a:hover {
   margin-left: auto;
   transition: 0.3s ease;
   cursor: pointer;
+  position: relative;
+  transition: ease 0.2s;
+  &::after{
+    content: '';
+  position: absolute;
+    top:42%;
+    right: 16px;
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+    transition: all .3s;
+  }
+  &:hover::after{
+    right: 11px;
+    border-top: 2px solid $mainColor;
+  border-right: 2px solid  $mainColor;
+}
 
   &:hover {
     background-color: $backGroundColor;
@@ -151,7 +170,6 @@ a:hover {
   position: relative;
   z-index: 1;
   transition: .5s;
-
   @include mediaQuery(sp) {
     display: none;
   }
@@ -181,65 +199,65 @@ a:hover {
 }
 
 // hamburger
-.hamburgerArea {
-  display: inline-block;
-  position: fixed;
-  top: 5%;
-  right: 5%;
-  z-index: 30;
-  transition: 0.5s ease;
-  display: none;
-  cursor: pointer;
+// .hamburgerArea {
+//   display: inline-block;
+//   position: fixed;
+//   top: 5%;
+//   right: 5%;
+//   z-index: 30;
+//   transition: 0.5s ease;
+//   display: none;
+//   cursor: pointer;
 
-  .hamburger {
-    width: 48px;
-    height: 48px;
-    border: 2px solid $navAreaFontColor;
-    border-radius: 50%;
-    position: relative;
-    background-color: $backGroundColor;
+//   .hamburger {
+//     width: 48px;
+//     height: 48px;
+//     border: 2px solid $navAreaFontColor;
+//     border-radius: 50%;
+//     position: relative;
+//     background-color: $backGroundColor;
 
-    span {
-      display: block;
-      width: 22px;
-      height: 3px;
-      background-color: $navAreaFontColor;
-      position: absolute;
-      top: 13px;
-      left: 12px;
-      transition: 0.3s;
-    }
+//     span {
+//       display: block;
+//       width: 22px;
+//       height: 3px;
+//       background-color: $navAreaFontColor;
+//       position: absolute;
+//       top: 13px;
+//       left: 12px;
+//       transition: 0.3s;
+//     }
 
-    span:nth-child(2) {
-      top: 21px;
-    }
+//     span:nth-child(2) {
+//       top: 21px;
+//     }
 
-    span:nth-child(3) {
-      top: 29px;
-    }
-  }
-}
+//     span:nth-child(3) {
+//       top: 29px;
+//     }
+//   }
+// }
 
-.active .hamburger {
-  span:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
+// .active .hamburger {
+//   span:nth-child(1) {
+//     transform: translateY(8px) rotate(45deg);
+//   }
 
-  span:nth-child(2) {
-    opacity: 0;
-  }
+//   span:nth-child(2) {
+//     opacity: 0;
+//   }
 
-  span:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-}
+//   span:nth-child(3) {
+//     transform: translateY(-8px) rotate(-45deg);
+//   }
+// }
 
-.active .headerInner {
-  opacity: 1;
-  visibility: visible;
-  width: 30%;
-  height: 100vh;
-}
+// .active .headerInner {
+//   opacity: 1;
+//   visibility: visible;
+//   width: 30%;
+//   height: 100vh;
+// }
 
 // mainVisual
 .mainVisual {
@@ -259,9 +277,11 @@ a:hover {
   p {
     font-size: 2.875rem;
     margin-bottom: 152px;
-    // font-family: serif;
+    font-family: "Shippori Mincho";
     letter-spacing: 0.7rem;
-
+    span {
+      display: inline-block;
+    }
     @include mediaQuery(tab) {
       font-size: 2rem;
       margin-bottom: 80px;
@@ -291,7 +311,6 @@ a:hover {
 
   @include mediaQuery(tab) {
     position: static;
-    
     width: 100%;
     margin-bottom: 48px;
   }
@@ -359,11 +378,11 @@ a:hover {
     }
   }
 
-  // readMoreボタン
+  // conceptエリアreadMoreボタン
   .btnArea {
     text-align: right;
-
-    .readMore {
+  }
+  .conceptText .readMore {
       display: inline-block;
       padding: 16px 48px;
       background-color: #fff;
@@ -373,16 +392,34 @@ a:hover {
       margin-left: auto;
       transition: 0.3s ease;
       cursor: pointer;
+      position: relative;
+     &::after{
+        content: '';
+      position: absolute;
+        top:42%;
+        right: 16px;
+        width: 7px;
+        height: 7px;
+        border-top: 2px solid $mainColor;
+        border-right: 2px solid $mainColor;
+        transform: rotate(45deg);
+        transition: all .3s;
+    }
 
       &:hover {
         background-color: $mainColor;
-        color: #fff;
-        outline: 1px solid #fff;
+        color: $backGroundColor;
+        outline: 1px solid $backGroundColor;
         box-shadow: 0 3px 7px $navAreaFontColor;
         opacity: 1;
       }
+      &:hover::after{
+        right: 11px;
+        border-top: 2px solid $backGroundColor;
+        border-right: 2px solid $backGroundColor;
     }
-  }
+    }
+  
 
 
 // service
@@ -598,7 +635,7 @@ a:hover {
     line-height: normal;
 
     @include mediaQuery(sp) {
-      font-size: 2rem;
+      font-size: 3rem;
     }
   }
 
@@ -615,7 +652,7 @@ a:hover {
     outline: 1px solid $backGroundColor;
     color: $backGroundColor;
     border-radius: 5px;
-    box-shadow: 0 2px 7px $navAreaFontColor;
+    box-shadow: 0px 5px 7px $navAreaFontColor;
     position: relative;
     z-index: 1;
     transition: .3s;
@@ -630,7 +667,6 @@ a:hover {
       left: 0;
       z-index: -1;
       background: $backGroundColor;
-
       transform-origin: 100% 50%;
       transform: scaleX(0);
       transition: transform ease .5s;
@@ -646,6 +682,7 @@ a:hover {
     }
   }
 }
+
 
 // footer
 .footer {
