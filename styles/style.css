@@ -468,14 +468,14 @@ a:hover {
 
 .video-area {
   text-align: center;
-  margin: 56px 0 80px;
+  margin: 56px auto 80px;
 }
 .video-area .bg-video {
   max-width: 550px;
 }
 @media screen and (max-width: 600px) {
   .video-area .bg-video {
-    max-width: 350px;
+    max-width: 336px;
   }
 }
 

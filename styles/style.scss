@@ -564,13 +564,13 @@ a:hover {
 
 .video-area {
   text-align: center;
-  margin: 56px 0 80px;
+  margin: 56px auto 80px;
 
   .bg-video {
     max-width: 550px;
 
     @include mediaQuery(sp) {
-      max-width: 350px;
+      max-width: 336px;
     }
   }
 }
