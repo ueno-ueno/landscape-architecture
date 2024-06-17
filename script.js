@@ -5,8 +5,8 @@ const toTop = document.querySelector('.toTop')
 console.log(toTop)
 
 window.addEventListener('scroll', function(){
-  let scrolly = window.scrollY;
-  if(scrolly > 900){
+  let scrollY = window.scrollY;
+  if(scrollY > 900){
     toTop.classList.add('active')
   }else{
     toTop.classList.remove('active')
@@ -14,7 +14,20 @@ window.addEventListener('scroll', function(){
   console.log(window.scrollY);
 })
 
-// fade
+// document.addEventListener('DOMContentLoaded',function(){
+//   const observerOptions = {
+//     root:null,
+//     rootMargin: '0px',
+//     threshold: 0.1
+//   };
+//   })
+
+
+
+
+  
+  
+  // fade
 gsap.registerPlugin(ScrollTrigger);
 const fade = gsap.utils.toArray('.fade')
 console.log(fade)
@@ -22,16 +35,16 @@ console.log(fade)
 fade.forEach(el => {
   gsap.fromTo(el, {
 
-y: 20, 
+y: 40, 
 opacity: 0, 
-duration: 1.5, 
-ease:'power4.Out' },
+duration: 2, 
+ease:'power4.inOut' },
 
 {
 y: 0, 
 opacity: 1, 
 duration: 1.5, 
-ease: 'power4.out',
+ease: 'power4.inout',
 
 scrollTrigger: {
   trigger: el,
