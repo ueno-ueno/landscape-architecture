@@ -329,7 +329,8 @@ a:hover {
   }
 
   @include mediaQuery(sp) {
-    margin-bottom: 24px;
+    position: static;
+    margin-bottom: 32px;
   }
 }
 
@@ -353,7 +354,7 @@ a:hover {
   }
 
   @include mediaQuery(sp) {
-    margin-bottom: 24px;
+    margin-bottom: 56px;
   }
 }
 
@@ -565,10 +566,10 @@ a:hover {
   margin: 56px 0 80px;
 
   .bg-video {
-    max-width: 500px;
+    max-width: 550px;
 
     @include mediaQuery(sp) {
-      max-width: 300px;
+      max-width: 350px;
     }
   }
 }

@@ -24,13 +24,13 @@ fade.forEach(el => {
 
 y: 20, 
 opacity: 0, 
-duration: 0.8, 
+duration: 1, 
 ease:'power4.Out' },
 
 {
 y: 0, 
 opacity: 1, 
-duration: 0.8, 
+duration: 1, 
 ease: 'power4.out',
 
 scrollTrigger: {
@@ -63,8 +63,8 @@ gsap.fromTo(
   {
     autoAlpha: 1, // アニメーション後は出現(透過率0)
     y: 0, // 20px上に移動
-    stagger: 0.4, // 0.2秒遅れて順番に再生
-    repeatDelay: 2,
+    stagger: 0.2, // 0.2秒遅れて順番に再生
+    repeatDelay: 1,
     duration: 1,
 
     scrollTrigger: {

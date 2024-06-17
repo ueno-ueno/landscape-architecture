@@ -241,7 +241,8 @@ a:hover {
 }
 @media screen and (max-width: 600px) {
   .conceptImg01 {
-    margin-bottom: 24px;
+    position: static;
+    margin-bottom: 32px;
   }
 }
 
@@ -268,7 +269,7 @@ a:hover {
 }
 @media screen and (max-width: 600px) {
   .conceptImg02 {
-    margin-bottom: 24px;
+    margin-bottom: 56px;
   }
 }
 
@@ -469,11 +470,11 @@ a:hover {
   margin: 56px 0 80px;
 }
 .video-area .bg-video {
-  max-width: 500px;
+  max-width: 550px;
 }
 @media screen and (max-width: 600px) {
   .video-area .bg-video {
-    max-width: 300px;
+    max-width: 350px;
   }
 }
 
