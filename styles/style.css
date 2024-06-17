@@ -236,7 +236,7 @@ a:hover {
   .conceptImg01 {
     position: static;
     width: 100%;
-    margin-bottom: 48px;
+    margin-bottom: 32px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -265,6 +265,7 @@ a:hover {
     width: 100%;
     text-align: right;
     display: block;
+    margin-bottom: 56px;
   }
 }
 @media screen and (max-width: 600px) {

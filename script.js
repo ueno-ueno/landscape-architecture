@@ -24,13 +24,13 @@ fade.forEach(el => {
 
 y: 20, 
 opacity: 0, 
-duration: 1, 
+duration: 1.5, 
 ease:'power4.Out' },
 
 {
 y: 0, 
 opacity: 1, 
-duration: 1, 
+duration: 1.5, 
 ease: 'power4.out',
 
 scrollTrigger: {
