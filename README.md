@@ -3,4 +3,4 @@
 
 figmaでオリジナルデザインを制作後、実装しました。
 
-figma,photoshop,illastlaor,html,css,javascript,gsap
+figma,Photoshop,illustrator,html,css,javascript,gsap
