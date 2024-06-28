@@ -2,5 +2,6 @@
 造園会社ということで、色は、茶色をメインに。写真の緑が引き立つようにしました。
 
 figmaでオリジナルデザインを制作後、実装しました。
+レスポンシブ対応しております。
 
 figma,Photoshop,illustrator,html,css,javascript,gsap
