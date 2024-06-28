@@ -4,4 +4,8 @@
 figmaでオリジナルデザインを制作後、実装しました。
 レスポンシブ対応しております。
 
+【所要時間】
+デザイン：写真選定を含めて７時間
+コーディング：９時間
+
 figma,Photoshop,illustrator,html,css,javascript,gsap
