@@ -12,7 +12,8 @@ window.addEventListener('scroll', function(){
     toTop.classList.remove('active')
   }
   console.log(window.scrollY);
-})
+});
+
 
 // document.addEventListener('DOMContentLoaded',function(){
 //   const observerOptions = {
@@ -23,10 +24,9 @@ window.addEventListener('scroll', function(){
 //   })
 
 
+  
 
 
-  
-  
   // fade
 gsap.registerPlugin(ScrollTrigger);
 const fade = gsap.utils.toArray('.fade')
