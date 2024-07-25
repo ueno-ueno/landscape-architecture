@@ -28,8 +28,8 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   background-color: $backGroundColor;
-  font-family: "Helvetica Neue", "Segoe UI", 游ゴシック体, YuGothic, 游ゴシック,
-    "Yu Gothic", "ヒラギノ角ゴ ProN W3", Meiryo, "メイリオ", sans-serif;
+  font-family:  "Helvetica Neue", "Segoe UI", "游ゴシック体", YuGothic, "游ゴシック", 
+  "Yu Gothic", "ヒラギノ角ゴ ProN W3", Meiryo, "メイリオ", sans-serif;
   color: $navAreaFontColor;
 }
 
@@ -62,7 +62,7 @@ a:hover {
   }
 }
 
-// titile
+// title
 .ttl {
   .ja {
     margin-bottom: 16px;

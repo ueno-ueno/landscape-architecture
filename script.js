@@ -15,18 +15,6 @@ window.addEventListener('scroll', function(){
 });
 
 
-// document.addEventListener('DOMContentLoaded',function(){
-//   const observerOptions = {
-//     root:null,
-//     rootMargin: '0px',
-//     threshold: 0.1
-//   };
-//   })
-
-
-  
-
-
   // fade
 gsap.registerPlugin(ScrollTrigger);
 const fade = gsap.utils.toArray('.fade')
