@@ -9,7 +9,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   background-color: #FAF8F6;
-  font-family: "Helvetica Neue", "Segoe UI", 游ゴシック体, YuGothic, 游ゴシック, "Yu Gothic", "ヒラギノ角ゴ ProN W3", Meiryo, "メイリオ", sans-serif;
+  font-family: "Helvetica Neue", "Segoe UI", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ ProN W3", Meiryo, "メイリオ", sans-serif;
   color: #2D2929;
 }
 
@@ -606,6 +606,10 @@ a:hover {
 .contact .contactUs-Btn:hover::before {
   transform-origin: 0% 50%;
   transform: scaleX(1);
+}
+
+.contact .wrapper {
+  margin-bottom: 0;
 }
 
 .toTop {

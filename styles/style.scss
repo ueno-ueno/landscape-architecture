@@ -209,66 +209,7 @@ a:hover {
   }
 }
 
-// hamburger
-// .hamburgerArea {
-//   display: inline-block;
-//   position: fixed;
-//   top: 5%;
-//   right: 5%;
-//   z-index: 30;
-//   transition: 0.5s ease;
-//   display: none;
-//   cursor: pointer;
 
-//   .hamburger {
-//     width: 48px;
-//     height: 48px;
-//     border: 2px solid $navAreaFontColor;
-//     border-radius: 50%;
-//     position: relative;
-//     background-color: $backGroundColor;
-
-//     span {
-//       display: block;
-//       width: 22px;
-//       height: 3px;
-//       background-color: $navAreaFontColor;
-//       position: absolute;
-//       top: 13px;
-//       left: 12px;
-//       transition: 0.3s;
-//     }
-
-//     span:nth-child(2) {
-//       top: 21px;
-//     }
-
-//     span:nth-child(3) {
-//       top: 29px;
-//     }
-//   }
-// }
-
-// .active .hamburger {
-//   span:nth-child(1) {
-//     transform: translateY(8px) rotate(45deg);
-//   }
-
-//   span:nth-child(2) {
-//     opacity: 0;
-//   }
-
-//   span:nth-child(3) {
-//     transform: translateY(-8px) rotate(-45deg);
-//   }
-// }
-
-// .active .headerInner {
-//   opacity: 1;
-//   visibility: visible;
-//   width: 30%;
-//   height: 100vh;
-// }
 
 // mainVisual
 .mainVisual {
@@ -722,7 +663,9 @@ a:hover {
     }
   }
 }
-
+.contact .wrapper{
+  margin-bottom: 0;
+}
 // footer
 .toTop {
   position: fixed;
