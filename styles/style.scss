@@ -6,9 +6,8 @@ $fontColor: #6D6C6A;
 $line: #DEDBD6;
 
 $breakPoint: (
-  sp: 'screen and (max-width: 600px)',
-  tab: 'screen and (max-width: 840px)',
-  pc: 'screen and (max-width: 1080px)'
+  sp: 'screen and (max-width: 767px)',
+  tab: 'screen and (max-width: 1024px)',
 );
 
 @mixin mediaQuery($bp) {
@@ -19,18 +18,18 @@ $breakPoint: (
 }
 
 html {
-  font-size: 100%;
+  font-size: 62.5%;
   scroll-behavior: smooth;
   scroll-padding-top: 4.5rem;
 }
 
 body {
-  font-size: 1rem;
+  font-size: 1.6rem;
   line-height: 1.5;
   background-color: $backGroundColor;
-  font-family:  "Helvetica Neue", "Segoe UI", "游ゴシック体", YuGothic, "游ゴシック", 
-  "Yu Gothic", "ヒラギノ角ゴ ProN W3", Meiryo, "メイリオ", sans-serif;
+  font-family: "Libre Baskerville", "Noto Sans JP", "Noto Serif JP", sans-serif;
   color: $navAreaFontColor;
+  letter-spacing: .1em;
 }
 
 img {
@@ -53,12 +52,13 @@ a:hover {
 }
 
 .logo {
-  width: 150px;
+  width: 200px;
   margin-right: 40px;
 
   @include mediaQuery(sp) {
     margin-bottom: 8px;
     margin-right: 0;
+    width: 150px;
   }
 }
 
@@ -66,14 +66,17 @@ a:hover {
 .ttl {
   .ja {
     margin-bottom: 16px;
-    display: block
+    display: block;
+    font-size: 2rem;
   }
 
   .en {
     display: inline-block;
-    border-top: 1px solid $mainColor;
-    font-size: 3rem;
-    font-weight: 600;
+    border-top: 0.5px solid $mainColor;
+    font-size: 4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-top: 8px;
   }
 }
 
@@ -227,10 +230,10 @@ a:hover {
   }
 
   p {
-    font-size: 2.875rem;
+    font-size: 3rem;
     margin-bottom: 152px;
-    font-family: "Shippori Mincho";
-    letter-spacing: 0.7rem;
+    font-family: "Noto Serif JP";
+    letter-spacing: 1rem;
 
     span {
       display: inline-block;
@@ -243,6 +246,9 @@ a:hover {
   }
 }
 
+
+
+
 // concept
 .conceptWrapper {
   width: 100%;
@@ -251,8 +257,15 @@ a:hover {
   position: relative;
 
   @include mediaQuery(tab) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     position: static;
+    // margin-bottom: 32px;
+  }
+}
+
+.conceptImg {
+  @include set.mediaQuery(tab) {
+    margin-top: 24px;
   }
 }
 
@@ -266,19 +279,14 @@ a:hover {
   @include mediaQuery(tab) {
     position: static;
     width: 100%;
-    margin-bottom: 32px;
-  }
-
-  @include mediaQuery(sp) {
-    position: static;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
   }
 }
 
 .conceptImg02 {
-  width: 40%;
+  width: 45%;
   position: absolute;
-  bottom: 8%;
+  bottom: -15%;
   left: 5%;
   z-index: 2;
 
@@ -309,6 +317,7 @@ a:hover {
   @include mediaQuery(tab) {
     max-width: 100%;
     padding: 24px;
+
   }
 
   .conceptTitle {
@@ -332,8 +341,8 @@ a:hover {
   border-radius: 50%;
 
   @include mediaQuery(sp) {
-    width: 110px;
-    height: 110px;
+    width: 95px;
+    height: 95px;
   }
 }
 
@@ -391,7 +400,7 @@ a:hover {
   position: relative;
 
   @include mediaQuery(sp) {
-    margin-bottom: 80px;
+    margin-bottom: 140px;
   }
 
   .serviceTitle {
@@ -412,24 +421,30 @@ a:hover {
   height: auto;
 }
 
+// .swiper-wrapper{
+//   max-width: 100%;
+// }
+
 .swiper-slide {
   border-radius: 5px;
   overflow: hidden;
   padding: 0 1%;
+  text-align: center;
 
   @include mediaQuery(sp) {
-    padding: 0;
+    padding: 0%;
   }
 
   img {
     width: 100%;
-    max-width: 800px;
-    height: 550px;
+    max-width: 500px;
+    height: auto;
     object-fit: cover;
+    aspect-ratio: 1/1;
 
-    @include mediaQuery(sp) {
-      height: 420px;
-    }
+    // @include mediaQuery(sp) {
+    //   height: 420px;
+    // }
   }
 }
 
@@ -437,16 +452,12 @@ a:hover {
   margin-bottom: 40px;
 
   .serviceMainCaption {
-    font-size: 4rem;
     margin-bottom: 16px;
-
-    @include mediaQuery(sp) {
-      font-size: 2rem;
-    }
 
     span {
       display: block;
       line-height: 1.1;
+      font-size: 4rem;
     }
 
     p {
@@ -614,6 +625,7 @@ a:hover {
     font-size: 4.5em;
     font-weight: 600;
     line-height: normal;
+    margin-bottom: 16px;
 
     @include mediaQuery(sp) {
       font-size: 3rem;
@@ -663,9 +675,11 @@ a:hover {
     }
   }
 }
-.contact .wrapper{
+
+.contact .wrapper {
   margin-bottom: 0;
 }
+
 // footer
 .toTop {
   position: fixed;
@@ -673,10 +687,10 @@ a:hover {
   right: 4%;
   display: none;
   z-index: 50;
-  
+
   img {
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
   }
 }
 

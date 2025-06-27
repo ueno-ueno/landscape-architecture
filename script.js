@@ -2,7 +2,7 @@
 
 // toTop
 const toTop = document.querySelector('.toTop')
-console.log(toTop)
+
 
 window.addEventListener('scroll', function(){
   let scrollY = window.scrollY;
@@ -11,14 +11,12 @@ window.addEventListener('scroll', function(){
   }else{
     toTop.classList.remove('active')
   }
-  console.log(window.scrollY);
 });
 
 
   // fade
 gsap.registerPlugin(ScrollTrigger);
 const fade = gsap.utils.toArray('.fade')
-console.log(fade)
 
 fade.forEach(el => {
   gsap.fromTo(el, {
@@ -45,10 +43,8 @@ scrollTrigger: {
 
 // mainCaption
 const paragraph = document.querySelector('.mainCaption')
-console.log( paragraph)
 
 const textContent = paragraph.textContent;
-console.log(textContent)
 const newTextContent = [...textContent]
   .map((char) => `<span>${char}</span>`)
   .join("");
@@ -83,12 +79,14 @@ const swiper = new Swiper('.swiper', {
   loop: true,
   speed: 3000, // 少しゆっくり(デフォルトは300)
   slidesPerView: 1,
+  spaceBetween: 0,
   breakpoints:{
-    640: {
-      slidesPerView: 2,
+    600: {
+      slidesPerView: 3,
     }
   },
-  slidesPerGroupe: 2,
+  
+  slidesPerGroupe: 3,
     autoplay: { // 自動再生
       delay: 1500, // 1.5秒後に次のスライド
       // disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない

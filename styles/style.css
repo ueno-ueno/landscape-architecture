@@ -1,16 +1,16 @@
-@charset "UTF-8";
 html {
-  font-size: 100%;
+  font-size: 62.5%;
   scroll-behavior: smooth;
   scroll-padding-top: 4.5rem;
 }
 
 body {
-  font-size: 1rem;
+  font-size: 1.6rem;
   line-height: 1.5;
   background-color: #FAF8F6;
-  font-family: "Helvetica Neue", "Segoe UI", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ ProN W3", Meiryo, "メイリオ", sans-serif;
+  font-family: "Libre Baskerville", "Noto Sans JP", "Noto Serif JP", sans-serif;
   color: #2D2929;
+  letter-spacing: 0.1em;
 }
 
 img {
@@ -27,32 +27,36 @@ a:hover {
   margin: 0 auto 160px;
   padding: 0 5%;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .wrapper {
     margin: 0 auto 64px;
   }
 }
 
 .logo {
-  width: 150px;
+  width: 200px;
   margin-right: 40px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .logo {
     margin-bottom: 8px;
     margin-right: 0;
+    width: 150px;
   }
 }
 
 .ttl .ja {
   margin-bottom: 16px;
   display: block;
+  font-size: 2rem;
 }
 .ttl .en {
   display: inline-block;
-  border-top: 1px solid #4D4135;
-  font-size: 3rem;
-  font-weight: 600;
+  border-top: 0.5px solid #4D4135;
+  font-size: 4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-top: 8px;
 }
 
 .readMore {
@@ -112,12 +116,12 @@ a:hover {
   align-items: center;
   box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.5);
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1024px) {
   .headerInner {
     padding: 24px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .headerInner {
     justify-content: center;
     align-items: center;
@@ -128,7 +132,7 @@ a:hover {
   display: flex;
   align-items: center;
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1024px) {
   .headerLeft {
     flex-direction: column;
   }
@@ -141,7 +145,7 @@ a:hover {
 .navArea li:not(:last-child) {
   margin-right: 48px;
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1024px) {
   .navArea li:not(:last-child) {
     margin-right: 24px;
   }
@@ -155,7 +159,7 @@ a:hover {
   z-index: 1;
   transition: 0.5s;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .contactBtn {
     display: none;
   }
@@ -191,21 +195,21 @@ a:hover {
      object-fit: cover;
   margin-bottom: 152px;
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1024px) {
   .mainVisual .mainVisualImg {
     margin-bottom: 80px;
   }
 }
 .mainVisual p {
-  font-size: 2.875rem;
+  font-size: 3rem;
   margin-bottom: 152px;
-  font-family: "Shippori Mincho";
-  letter-spacing: 0.7rem;
+  font-family: "Noto Serif JP";
+  letter-spacing: 1rem;
 }
 .mainVisual p span {
   display: inline-block;
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1024px) {
   .mainVisual p {
     font-size: 2rem;
     margin-bottom: 80px;
@@ -218,10 +222,11 @@ a:hover {
   justify-content: space-between;
   position: relative;
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1024px) {
   .conceptWrapper {
-    flex-direction: column;
+    flex-direction: column-reverse;
     position: static;
+    margin-bottom: 32px;
   }
 }
 
@@ -232,34 +237,28 @@ a:hover {
   left: 3%;
   z-index: 1;
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1024px) {
   .conceptImg01 {
     position: static;
     width: 100%;
-    margin-bottom: 32px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .conceptImg01 {
-    position: static;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
   }
 }
 
 .conceptImg02 {
-  width: 40%;
+  width: 45%;
   position: absolute;
-  bottom: 8%;
+  bottom: -15%;
   left: 5%;
   z-index: 2;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: px) {
   .conceptImg02 {
     bottom: 15%;
     left: 0%;
   }
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1024px) {
   .conceptImg02 {
     position: static;
     width: 100%;
@@ -268,7 +267,7 @@ a:hover {
     margin-bottom: 56px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .conceptImg02 {
     margin-bottom: 56px;
   }
@@ -280,7 +279,7 @@ a:hover {
   color: #FAF8F6;
   padding: 56px 48px;
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1024px) {
   .conceptText {
     max-width: 100%;
     padding: 24px;
@@ -302,7 +301,7 @@ a:hover {
   right: 5%;
   border-radius: 50%;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .circurImg {
     width: 110px;
     height: 110px;
@@ -357,9 +356,9 @@ a:hover {
   margin-bottom: 240px;
   position: relative;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .serviceBg {
-    margin-bottom: 80px;
+    margin-bottom: 140px;
   }
 }
 .serviceBg .serviceTitle {
@@ -381,45 +380,37 @@ a:hover {
   border-radius: 5px;
   overflow: hidden;
   padding: 0 1%;
+  text-align: center;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .swiper-slide {
-    padding: 0;
+    padding: 0%;
   }
 }
 .swiper-slide img {
   width: 100%;
-  max-width: 800px;
-  height: 550px;
+  max-width: 500px;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
-}
-@media screen and (max-width: 600px) {
-  .swiper-slide img {
-    height: 420px;
-  }
+  aspect-ratio: 1/1;
 }
 
 .serviceMainText {
   margin-bottom: 40px;
 }
 .serviceMainText .serviceMainCaption {
-  font-size: 4rem;
   margin-bottom: 16px;
-}
-@media screen and (max-width: 600px) {
-  .serviceMainText .serviceMainCaption {
-    font-size: 2rem;
-  }
 }
 .serviceMainText .serviceMainCaption span {
   display: block;
   line-height: 1.1;
+  font-size: 4rem;
 }
 .serviceMainText .serviceMainCaption p {
   font-size: 1.125rem;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .serviceMainText .serviceMainCaption p {
     font-size: 1rem;
   }
@@ -430,7 +421,7 @@ a:hover {
   gap: 32px;
   margin-bottom: 40px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .serviceContent {
     flex-direction: column;
   }
@@ -445,7 +436,7 @@ a:hover {
 .serviceContent li h3 {
   font-weight: bold;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .serviceContent li {
     width: 100%;
   }
@@ -473,7 +464,7 @@ a:hover {
 .video-area .bg-video {
   max-width: 550px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .video-area .bg-video {
     max-width: 336px;
   }
@@ -485,7 +476,7 @@ a:hover {
   border-top: 4px dotted #4D4135;
   padding-top: 40px;
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1024px) {
   .adviceArea {
     flex-direction: column;
   }
@@ -493,7 +484,7 @@ a:hover {
 .adviceArea .left {
   width: 50%;
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1024px) {
   .adviceArea .left {
     width: 100%;
   }
@@ -502,7 +493,7 @@ a:hover {
   font-size: 2rem;
   margin-bottom: 64px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .adviceArea .left p {
     font-size: 1.25rem;
     text-align: center;
@@ -512,7 +503,7 @@ a:hover {
 .adviceArea .right {
   width: 65%;
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1024px) {
   .adviceArea .right {
     width: 100%;
   }
@@ -564,8 +555,9 @@ a:hover {
   font-size: 4.5em;
   font-weight: 600;
   line-height: normal;
+  margin-bottom: 16px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .contact .contactUs {
     font-size: 3rem;
   }
@@ -620,8 +612,8 @@ a:hover {
   z-index: 50;
 }
 .toTop img {
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
 }
 
 .toTop.active {
